@@ -1,6 +1,6 @@
 # Provably-Fair Verification Tool
 
-This folder contains `verify.py` – a standalone script that allows **any player** to independently prove that a GameRoll round was fair and that the server did not manipulate the result after seeing the bets. -> `verify.py` is a minimal **one-file** script (no external dependencies) that lets *any* player double-check a completed GameRoll round.  
+This folder contains `verify_v2.py` – a standalone script that allows **any player** to independently prove that a GameRoll round was fair and that the server did not manipulate the result after seeing the bets. -> `verify_v2.py` is a minimal **one-file** script (no external dependencies) that lets *any* player double-check a completed GameRoll round.  
 It answers two simple questions:
 
 1. Did the revealed **Seed** really match the publicly committed **Hash**?
@@ -13,7 +13,7 @@ It answers two simple questions:
 2. Copy the **Seed** and **Hash** values shown in the same Legit-check window.
 3. Run the script:
 ```bash
-python scripts/verify.py --seed 4f7b899d0a0e8611f... --hash 8e1c8e61f5f4c7a9... --bets bets.json
+python scripts/verify_v2.py --seed 4f7b899d0a0e8611f... --hash 8e1c8e61f5f4c7a9... --bets bets.json
 ```
 If the round is fair you will see a confirmation together with the winning ticket and Telegram account.
 
@@ -60,7 +60,7 @@ MIT
 
 # Проверка честности GameRoll
 
-`verify.py` — минимальный скрипт без внешних зависимостей, который позволяет **любой** стороне проверить честность завершённого раунда GameRoll.
+`verify_v2.py` — минимальный скрипт без внешних зависимостей, который позволяет **любой** стороне проверить честность завершённого раунда GameRoll.
 
 Он отвечает на два вопроса:
 
@@ -73,7 +73,7 @@ MIT
 2. Скопируйте значения **Seed** и **Hash** из того же окна Legit-check.
 3. Запустите скрипт:
 ```bash
-python scripts/verify.py --seed 4f7b899d0a0e8611f... --hash 8e1c8e61f5f4c7a9... --bets bets.json
+python scripts/verify_v2.py --seed 4f7b899d0a0e8611f... --hash 8e1c8e61f5f4c7a9... --bets bets.json
 ```
 При корректном раунде вы увидите сообщение об успехе и информацию о победителе.
 

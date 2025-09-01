@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""verify.py  –  Provably-fair verification tool for GameRoll rounds.
+"""verify_v2.py  –  Provably-fair verification tool for GameRoll rounds.
 
 Usage example:
-    python scripts/verify.py --seed e3c0... --hash f12a... --bets bets.json
+    python scripts/verify_v2.py --seed e3c0... --hash f12a... --bets bets.json
 
 The script validates that:
 1. SHA-256(seed) equals committed hash published before the round.
